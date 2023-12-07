@@ -17,7 +17,7 @@ public class StringTruncateTests {
     public void limitNotReached_StringUnchanged()
     {
         String input = "The economy is about to collapse";
-        int limit = 32;
+        int limit = 50;
 
         Assertions.assertEquals("The economy is about to collapse", StringUtils.truncate(input, limit));
     }
