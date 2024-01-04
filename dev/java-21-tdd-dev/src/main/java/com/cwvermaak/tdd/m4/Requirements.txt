@@ -1,0 +1,24 @@
+Calculate the total value of a stock portfolio
+
+    1.) Portfolio shows stock, qty, price and value per stock position
+    2.) Portfolio must show total value of all stocks
+    3.) Adding (buying) more of the same stock should be reflected in the same stock position
+    4.) Adding (buying) a new stock should be reflected in 2.)
+
+Think stage:
+------------
+
+Entities:
+    - Portfolio
+    - Position - (has qty, price, value -> qty * price)
+    - Stock - company name
+
+Tests:
+    - no stock shows nothing
+        - one position shows correct data for that stock (px, qty, value)
+        - two positions shows correct data for those stocks (px, qty, value)
+        - adding twice to a position merges the data (px, qty, value)
+            - sum the qty
+            - avg the px
+
+

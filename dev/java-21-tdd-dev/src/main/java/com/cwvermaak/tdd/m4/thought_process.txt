@@ -1,0 +1,4 @@
+TODO - math with floats - use Money lib
+
+Should we create portfolios with existing stocks?
+No, create an empty portfolio first, then add() stocks

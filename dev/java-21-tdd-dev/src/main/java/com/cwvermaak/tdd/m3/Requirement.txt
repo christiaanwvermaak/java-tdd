@@ -1,0 +1,28 @@
+Requirement:
+    Truncate title, 1st paragraph or another string with "..."
+    if over character limit (width must be flexible)
+
+Think:
+------------
+Inputs?:
+    - String to truncate or not
+    - Length at which to start truncating
+
+Tests:
+------------
+    - Exceeds character limit -> string is truncated with "..."
+    - Less than limit -> string is unchanged
+
+More Tests:
+------------
+    - Invalid String (null)
+    - Empty string (nothing in the string - zero length)
+    - Blank string (just whitespace)
+    - Invalid limit (0 or less)
+
+More complex tests (combinatronics):
+----------------------------------------
+
+    What if?
+        - input < ellipses
+        - input == ellipses
